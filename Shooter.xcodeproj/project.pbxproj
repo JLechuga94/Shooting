@@ -15,6 +15,7 @@
 		7DF7C91120E3635A0040672A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DF7C90F20E3635A0040672A /* LaunchScreen.storyboard */; };
 		7DF7C91C20E3635A0040672A /* ShooterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF7C91B20E3635A0040672A /* ShooterTests.swift */; };
 		7DF7C92720E3635A0040672A /* ShooterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF7C92620E3635A0040672A /* ShooterUITests.swift */; };
+		7DF7C93520E365CA0040672A /* Media.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DF7C93420E365CA0040672A /* Media.scnassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		7DF7C92220E3635A0040672A /* ShooterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShooterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DF7C92620E3635A0040672A /* ShooterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShooterUITests.swift; sourceTree = "<group>"; };
 		7DF7C92820E3635A0040672A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DF7C93420E365CA0040672A /* Media.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Media.scnassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				7DF7C90F20E3635A0040672A /* LaunchScreen.storyboard */,
 				7DF7C91220E3635A0040672A /* Info.plist */,
 				7DF7C90A20E363580040672A /* Shooter.xcdatamodeld */,
+				7DF7C93420E365CA0040672A /* Media.scnassets */,
 			);
 			path = Shooter;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 			files = (
 				7DF7C91120E3635A0040672A /* LaunchScreen.storyboard in Resources */,
 				7DF7C90E20E3635A0040672A /* Assets.xcassets in Resources */,
+				7DF7C93520E365CA0040672A /* Media.scnassets in Resources */,
 				7DF7C90920E363580040672A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
