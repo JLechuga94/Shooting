@@ -32,7 +32,8 @@ class ViewController: UIViewController {
     }
 
     @objc func handleTap(sender: UITapGestureRecognizer){
-        guard let pointOfView = self.sceneView.pointOfView else {return}
+        guard let sceneView = sender.view as? ARSCNView else {return}
+        guard let pointOfView = sceneView.pointOfView else {return}
         self.removeEveryOtherBullet()
         let transform = pointOfView.transform
         let location = SCNVector3(transform.m41, transform.m42, transform.m43)
@@ -42,6 +43,7 @@ class ViewController: UIViewController {
         bullet.geometry?.firstMaterial?.diffuse.contents = UIColor.blue
         bullet.position = position
         let body = SCNPhysicsBody(type: .dynamic, shape: SCNPhysicsShape(node: bullet))
+        body.isAffectedByGravity = false
         bullet.physicsBody = body
         bullet.name = "Bullet"
 //        body.restitution = 0.2
@@ -61,6 +63,7 @@ class ViewController: UIViewController {
         let eggScene = SCNScene(named: "Media.scnassets/egg.scn")
         let eggNode = (eggScene?.rootNode.childNode(withName: "egg", recursively: false))!
         eggNode.position = SCNVector3(x,y,z)
+        eggNode.physicsBody = SCNPhysicsBody(type: .static, shape: SCNPhysicsShape(node: eggNode, options: nil))
         self.sceneView.scene.rootNode.addChildNode(eggNode)
     }
 
